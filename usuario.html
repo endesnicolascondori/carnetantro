@@ -310,178 +310,22 @@
         }
         
         // Base de datos de encuestadores (en una aplicación real, esto se obtendría de un servidor)
-        const encuestadoresDB = [
-                {
-                "num": 1,
-                "odei": "LIMA",
-                "nombre": "VILLAGARAY HUILLCAHUAMAN NATHALY",
-                "dni": "78110496",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 2,
-                "odei": "LIMA",
-                "nombre": "SUAQUITA HUANCA RUTH MERY",
-                "dni": "71224699",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 3,
-                "odei": "LIMA",
-                "nombre": "ESCALANTE BEDIA LIZ ANALI",
-                "dni": "77681619",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 4,
-                "odei": "LIMA",
-                "nombre": "MAMANI MEDINA ANGIE NIKOL",
-                "dni": "75585250",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 5,
-                "odei": "LIMA",
-                "nombre": "QUISPE SALAZAR FIORELLA DANISSA",
-                "dni": "72282444",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 6,
-                "odei": "LIMA",
-                "nombre": "SANTARDER CCAHUANTICO DANIELA YENNI",
-                "dni": "72882621",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 7,
-                "odei": "LIMA",
-                "nombre": "SEDANO LOPEZ RUTH SARAI",
-                "dni": "73547501",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 8,
-                "odei": "LIMA",
-                "nombre": "CAREY GUTIERREZ JOHANNY",
-                "dni": "48867115",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 9,
-                "odei": "LIMA",
-                "nombre": "CORTEZ DE LA CRUZ DELFINA MERCEDES",
-                "dni": "75017513",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 10,
-                "odei": "LIMA",
-                "nombre": "MONTALVO ROJAS SHARON ELIANA",
-                "dni": "70498484",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 11,
-                "odei": "LIMA",
-                "nombre": "TORRES LOPEZ LUZ NATHALY",
-                "dni": "72882851",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 12,
-                "odei": "LIMA",
-                "nombre": "TORRES RAZURI YEIRY ELIZABETH JANE",
-                "dni": "70852301",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 13,
-                "odei": "LIMA",
-                "nombre": "RIVERA PIZARRO LUPE",
-                "dni": "47401433",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 14,
-                "odei": "LIMA",
-                "nombre": "CUENCA HUAMAN YULISSA BEATRIZ",
-                "dni": "74703268",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 15,
-                "odei": "LIMA",
-                "nombre": "MELGAREJO ROMAN DELINA MARLENI",
-                "dni": "72604624",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 16,
-                "odei": "LIMA",
-                "nombre": "SILVA AYACHI MARGARITA",
-                "dni": "73149705",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 17,
-                "odei": "LIMA",
-                "nombre": "BARDALES GALVEZ YAKELIN GABRIELA",
-                "dni": "73053457",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 18,
-                "odei": "LIMA",
-                "nombre": "CORDOVA ALVINO EDITH ZUNILDA",
-                "dni": "42011950",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 19,
-                "odei": "LIMA",
-                "nombre": "PINTADO CHINCHAY YANINA",
-                "dni": "45761190",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 20,
-                "odei": "LIMA",
-                "nombre": "MARCHAN TANDAZO KIARI GISEL",
-                "dni": "76766189",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
+        const data = [
+            {
                 "num": 21,
                 "odei": "LIMA",
-                "nombre": "ABAD CAMPOVERDE DIANA LIZETH",
-                "dni": "75627728",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 22,
+                "nombre": "CHAVEZ MORENO DAYANNE CONSUELO",
+                "dni": "76505695",
+                "cargo": "ENCUESTADORA"
+            },
+            {
+                "num": 54,
                 "odei": "LIMA",
-                "nombre": "SALAS YERBA INDIRA PAULA",
-                "dni": "72684869",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 23,
-                "odei": "LIMA",
-                "nombre": "MAMANI CALLATA KARINA RUTH",
-                "dni": "70615259",
-                "cargo": "SERVICIO DE TOMA DE MEDIDAS ANTROPOMETRICAS"
-                },
-                {
-                "num": 24,
-                "odei": "LIMA",
-                "nombre": "CECILIA KELY LOPEZ YAURI",
-                "dni": "42893718",
-                "cargo": "SUPERVISORA NACIONAL"
-                }
-
+                "nombre": "BENITEZ AYALA NICKOLE JANET",
+                "dni": "76974603",
+                "cargo": "ENCUESTADORA"
+            }
         ]
-
         
         
         // Función para obtener encuestador por DNI
