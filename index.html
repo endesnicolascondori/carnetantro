@@ -478,7 +478,7 @@
                     <div class="id-card" id="${cardId}" data-region="${person.odei}">
                         <div class="header">
                             <div class="logo">
-                                <img src="https://endesnicolascondori.github.io/carnet/usuarios/logo.png" alt="Logo">
+                                <img src="https://endesnicolascondori.github.io/carnetantro/usuarios/logo.png" alt="Logo">
                                 ENDES
                             </div>
                             
@@ -486,7 +486,7 @@
                         <div class="card-body">
                             <div class="photo-section">
                                 <div class="photo">
-                                    <img src="/usuarios/${person.dni}.jpg" onerror="this.onerror=null; this.src='https://endesnicolascondori.github.io/carnet/usuarios/${person.dni}.jpg';" alt="Foto ${person.nombre}">
+                                    <img src="/usuarios/${person.dni}.jpg" onerror="this.onerror=null; this.src='https://endesnicolascondori.github.io/carnetantro/usuarios/${person.dni}.jpg';" alt="Foto ${person.nombre}">
                                 </div>
                             </div>
                             <div class="details">
@@ -511,7 +511,7 @@
                 // Generar código QR después de insertar el HTML
                 setTimeout(() => {
                     new QRCode(document.getElementById(`qrcode-${person.dni}`), {
-                        text: `https://endesnicolascondori.github.io/carnet/usuario.html?dni=${person.dni}`,
+                        text: `https://endesnicolascondori.github.io/carnetantro/usuario.html?dni=${person.dni}`,
                         width: 80,
                         height: 80,
                         colorDark: "#ec407a",
